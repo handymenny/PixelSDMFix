@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.sdm\shell\fixsdm]
+@="Fix sdm header"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.sdm\shell\fixsdm\command]
+@="C:\\path\\to\\pixel_sdm_fix.exe \"%1\""
