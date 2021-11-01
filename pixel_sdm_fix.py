@@ -33,7 +33,7 @@ inputArgs = sys.argv
 if len(inputArgs) < 2:
     print("Missing file operand")
     print("Usage: SDM_FILE...\nFix the header of the SDM_FILE(s).\nA backup file (.bak) is generated automatically")
-    exit(1)
+    sys.exit(1)
 
 for i in inputArgs[1:]:
     try:
