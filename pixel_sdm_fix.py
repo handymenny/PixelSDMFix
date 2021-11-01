@@ -15,13 +15,13 @@ def backup(filepath):
 def replace_header(filepath):
     f = open(filepath, 'rb+')
 
-    # check if third byte is already ok
+    # check if 4th byte is already ok
     f.seek(3)
     if f.read(1) == b'\xfd':
         print(f'{filepath} already has the right header')
         return
 
-    # replace third byte
+    # replace 4th byte
     f.seek(3)
     f.write(bytes((0xfd,)))
     f.close()
